@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodNet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/a8dc6345-f435-4124-adc5-06c771bdc7b8.png" type="image/x-icon">
+</head>
+<body>
+    <header class="navbar">
+        <h1>MoodNet 🌤️</h1>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="./profile.html">Profile</a>
+            <a href="./messages.html">Messages</a>
+        </nav>
+        <button class="post-button">Post Your Mood</button>
+    </header>
+    <div class="main-container">
+       <aside class="sidebar">
+    <div class="sidebar-profile">
+      <img class="sidebar-avatar" src="./assets/profile pic.jpg" alt="Your avatar">
+      <div class="sidebar-username">AuraLavni</div>
+    </div>
+    <nav>
+      <a href="#" class="active">🏠 Home</a>
+      <a href="./profile.html">👤 Profile</a>
+       <a href="./Friends.html">👥 Friends</a>
+      <a href="./settings.html">⚙️ Settings</a>
+    </nav>
+    <div class="mood-filter">
+      <h4>Filter by Mood</h4>
+      <button class="mood-btn" data-mood="happy">😊 Happy</button>
+      <button class="mood-btn" data-mood="sad">😔 Sad</button>
+      <button class="mood-btn" data-mood="inspired">🧐 Inspired</button>
+      <button class="mood-btn" data-mood="calm">✨ calm</button>
+    </div>
+  </aside>
+        <main class="feed">
+            <div class="post-creation-box">
+                <textarea placeholder="What's on your mind right now?"></textarea>
+                <div class="post-actions">
+                    <select id="moodSelect"><option>select mood</option>
+                          <option value="calm">calm ✨</option>
+                        <option value="Happy">Happy😊</option>
+                        <option value="inspired">Inspired 🧐</option>
+                     <option value="sad">sad 😔</option></select>
+                    <button id="shareBtn">Share Mood</button>
+                </div>
+            </div>
+
+            <article class="post happy">
+                <div class="post-header">
+                    <img src="./assets/echo of joy.jpg" alt="User Avatar" class="avatar">
+                    <div class="post-info">
+                        <strong>@EchoOfJoy</strong> posted <span class="mood-tag happy" >😊 Happy</span>
+                        <span class="timestamp">10 mins ago</span>
+                    </div>
+                </div>
+                <p class="post-content">Laughing under the stars with friends, letting the world fade away—this memory will always be one of my favourites ✨</p>
+                <div class="post-footer">
+                    <button class="action-btn">Like ♡</button>
+                    <button class="action-btn">Comment 💬</button>
+                    <button class="action-btn">Share  ➤</button>
+                </div>
+            </article>
+             <article class="post calm">
+                <div class="post-header">
+                    <img src="./assets/littlespark.jpg" alt="User Avatar" class="avatar">
+                    <div class="post-info">
+                        <strong>@Littlespark</strong> posted <span class="mood-tag calm">✨ calm</span>
+                        <span class="timestamp">2 hours ago</span>
+                    </div>
+                </div>
+                <p class="post-content">Finding joy in the small things — fresh air, a warm cup, and a heart full of hope 😊</p>
+                <div class="post-footer">
+                    <button class="action-btn">Like ♡</button>
+                    <button class="action-btn">Comment 💬</button>
+                    <button class="action-btn">Share  ➤</button>
+                </div>
+                <div id="feedContainer"></div>
+            </article>
+
+            </main>
+
+        <section class="profile-preview">
+            <div class="user-card">
+                <img src="./assets/profile pic.jpg" alt="My Avatar" class="big-avatar">
+                <h3>@AuraLavni</h3>
+                <p> Happy to be here, sharing life one feeling at a time 🌤️</p>
+                <div class="stats">
+                    <span><strong>75</strong> Posts</span>
+                    <span><strong>507</strong> Followers</span>
+                </div>
+              <a href="profile.html">  <button class="edit-btn">View Profile</button></a>
+            </div>
+            
+            <div class="trends">
+                <h3>Current Mood Trends</h3>
+                <ul>
+                    <li>#Calm✨ (1.2K Posts)</li>
+                    <li>#Happy😊 (980 Posts)</li>
+                    <li>#MondayMotivation🔥 (720 Posts)</li>
+                    <li>#shareourmood🌤️ (777 Posts)</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoodNet – Profile</title>
+    <link rel="stylesheet" href="profile.css" />
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <h1>MoodNet 🌤️</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="profile.html" class="active">Profile</a>
+            <a href="./messages.html">Messages</a>
+        </nav>
+        <button class="post-button">Post Your Mood</button>
+    </header>
+
+    <!-- PROFILE MAIN STRUCTURE -->
+    <div class="profile-container">
+        <!-- MAIN PROFILE SECTION -->
+        <main class="profile-main">
+
+            <!-- PROFILE HEADER -->
+            <section class="profile-header">
+                <img src="./assets/profile pic.jpg" class="profile-avatar" />
+                <h2>@AuraLavni</h2>
+                <p>Sharing life one feeling at a time 🌤️</p>
+
+                <div class="profile-stats">
+                    <div><strong>75</strong><span>Posts</span></div>
+                    <div><strong>507</strong><span>Followers</span></div>
+                    <div><strong>112</strong><span>Following</span></div>
+                </div>
+
+                <button class="edit-profile-btn">Edit Profile</button>
+            </section>
+
+            <h3 class="section-title">Your Posts</h3>
+
+            <!-- USER POSTS -->
+            <article class="post happy">
+                <div class="post-header">
+                    <img src="./assets/profile pic.jpg" class="avatar" />
+                    <div class="post-info">
+                        <strong>@AuraLavni</strong> posted 
+                        <span class="mood-tag happy">😊 Happy</span>
+                        <span class="timestamp">1 day ago</span>
+                    </div>
+                </div>
+                <p class="post-content">
+                    Sunshine, warm breeze, and a grateful heart ✨ Today feels perfect.
+                </p>
+                <div class="post-footer">
+                    <button class="action-btn">Like ♡</button>
+                    <button class="action-btn">Comment 💬</button>
+                    <button class="action-btn">Share ➤</button>
+                </div>
+            </article>
+
+            <article class="post inspired">
+                <div class="post-header">
+                    <img src="./assets/profile pic.jpg" alt="User Avatar" class="avatar">
+                    <div class="post-info">
+                        <strong>@AuraLavni</strong> posted <span class="mood-tag inspired">🧐 inspired</span>
+                        <span class="timestamp">10 mins ago</span>
+                    </div>
+                </div>
+                <p class="post-content">I finished one of my favorite book today ,that makes me so refreshing 📖😊</p>
+                <div class="post-footer">
+                    <button class="action-btn">Like ♡</button>
+                    <button class="action-btn">Comment 💬</button>
+                    <button class="action-btn">Share  ➤</button>
+                </div>
+            </article>
+             <article class="post calm">
+                <div class="post-header">
+                    <img src="./assets/profile pic.jpg" alt="User Avatar" class="avatar">
+                    <div class="post-info">
+                        <strong>@AuraLavni</strong> posted <span class="mood-tag calm">✨ calm</span>
+                        <span class="timestamp">2 hours ago</span>
+                    </div>
+                </div>
+                <p class="post-content">Calm isn’t empty,it’s where my thoughts finally breathe.💭☕</p>
+                <div class="post-footer">
+                    <button class="action-btn">Like ♡</button>
+                    <button class="action-btn">Comment 💬</button>
+                    <button class="action-btn">Share  ➤</button>
+                </div>
+            </article>
+
+        </main>
+    </div>
+
+</body>
+</html>
